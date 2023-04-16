@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Uebung_3_3_3
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Uebung_3_3_3.\r\n\ \r\n\ @author\ Marius\ Vollmer\r\n\ @version\ 26.02.2023\r\n\ \r\n\ erste\ 50\ nat\u00FCrliche\ Zahlen\r\n\ A\ ->\ durch\ 3\ teilbar\r\n\ B\ ->\ durch\ 5\ teilbar\r\n\ C\ ->\ durch\ 7\ teilbar\r\n\ nach\ jeder\ Ausgabe\ Zeilenumbruch\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=floatSignifikanz
+comment0.text=\r\n\ Bei\ einem\ float-Wert\ sind\ in\ Java\ nur\ etwa\ 7\ signifikante\ Dezimalstellen\ \r\n\ garantiert.\ Folglich\ kann\ ein\ Java-Programm\ den\ float-Wert\ 1.0f\ bei\ \r\n\ fortgesetzter\ Halbierung\ (1.0f,\ 0.5f,\ 0.25f,\ \u2026)\ irgendwann\ nicht\ mehr\ \r\n\ von\ 0.0f\ unterscheiden.\ \r\n\r\n\ Bestimmen\ Sie\ mit\ einem\ Testprogramm\ die\ Anzahl\ der\ fortgesetzten\ Halbierungen\ \r\n\ bei\ der\ dies\ zum\ ersten\ Mal\ auftritt.\r\n\ \r\n\ @author\ Marius\ Vollmer\r\n\ @version\ 11.04.2023\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
