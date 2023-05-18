@@ -4,6 +4,7 @@ class RekursiveMethoden02 {
    static long fak(long n) {
       return n < 1 ? 1 : fak(n-1)*n;
    }
+   
    public static void main(String[] args) {
       long zeit; 
       long ergebnis;
@@ -18,3 +19,5 @@ class RekursiveMethoden02 {
       }    
    }          
 }
+
+//Annahme: Programm berechnet Fakultäten beginnend mit 10 (bis 15) und berechnet dabei noch den Zeitaufwand

@@ -14,9 +14,9 @@ public class Uebung_3_3_1
 {
        public static void main(String[] args)
     {
-        System.out.println(6/4*2.0);
-        System.out.println((int) 6/4.0*3);
-        System.out.println((int) (6/4.0*3));
-        System.out.println(3*5+8/3%4*5);
+        System.out.println(6/4*2.0);          // 2.0 (weil 1 x 2.0)
+        System.out.println((int) 6/4.0*3);    // 4.5 (weil 6.0/4.0=1.5 .. x3=4.5)
+        System.out.println((int) (6/4.0*3));  // 4   (weil (int)4.5=4)
+        System.out.println(3*5+8/3%4*5);      // 25  (weil 3x5=15 .. 8/3=2 .. 2%4=2 .. 2x5=10 -> 15+10)
     }
 }

@@ -20,15 +20,19 @@ public class Uebung_3_3_3
         int c = 7;
         
         for(int i = 1; i <= 50; i++) {
+            System.out.print(i);
             if (i % a == 0) {
-                System.out.println(i + " A");
-            } else if (i % b == 0) {
-                System.out.println(i + " B");
-            } else if (i % c == 0) {
-                System.out.println(i + " C");
-            } else {
-                System.out.println(i);
+                System.out.print(" A");
             }
+            if (i % b == 0) {
+                System.out.print(" B");
+            }
+            if (i % c == 0) {
+                System.out.print(" C");
+            }
+            System.out.println();
         }
     }
 }
+//Nachträglicher Hinweis: So wird nicht gewünschte Ausgabe erzielt!
+//Erst nur Zahl ausgeben, dann die ggf. passenden Divisoren, dann den Zeilenumbruch separat

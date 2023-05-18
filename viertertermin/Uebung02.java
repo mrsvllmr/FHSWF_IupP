@@ -15,6 +15,7 @@ public class Uebung02 {
       add(n1,n2,n3,n4,n5);    
       add(n1,n2,n3,n4,n5,n6);
    }
+   
    public static void add(int... summanden) {
        if(summanden==null || summanden.length==0) return;
        int ergebnis = 0;
@@ -25,3 +26,7 @@ public class Uebung02 {
        System.out.println(ergebnis);
    }
 }
+
+// Programm bildet erst den Term über das gesamte Array
+// Wenn letzter Index erreicht, dann wird "=" statt "+" geschrieben
+// Zuletzt wird die Summe/das Gesamtergbnis ausgegeben

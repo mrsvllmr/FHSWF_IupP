@@ -7,9 +7,9 @@ public class IterationBeispiel {
       long[][] matrix = new long[DIM][DIM];
       int iter = 0;
       long start = System.nanoTime();
-      while (iter++ < ITERATIONEN) {
-         for (int i = 0;i < DIM;i++) {
-            for (int j = 0;j < DIM;j++) {
+      while (iter++ < ITERATIONEN) {            // 0-9
+         for (int i = 0;i < DIM;i++) {          // 0-999
+            for (int j = 0;j < DIM;j++) {       // 0-999
                matrix[i][j] = 1;
             }
          }
@@ -18,3 +18,6 @@ public class IterationBeispiel {
       System.out.println("Durchschnittszeit in Nanosekunden: " + end/ITERATIONEN);
    }
 }
+// Erstellt eine 1000 x 1000 Matrix und füllt diese an jeder Stelle mit einer 1
+// Wiederholt das Ganze 10x
+// Ermittelt die Gesamtdauer und teilt diese durch die Anzahl an Iterationen (10)

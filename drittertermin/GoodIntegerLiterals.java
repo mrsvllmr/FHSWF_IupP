@@ -4,7 +4,7 @@ class GoodIntegerLiterals {
 	//Dezimal
    int elf_d = 11;
    long gross = 1_111_000_000;
-   //Bin‰r
+   //Bin√§r
    byte elf_b = 0b00001011;
 	//Oktal
    int acht = 010;

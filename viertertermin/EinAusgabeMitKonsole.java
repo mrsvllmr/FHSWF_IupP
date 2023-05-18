@@ -4,7 +4,7 @@ public class EinAusgabeMitKonsole {
    public static void main(String[] args) {
       int a, b;
       if (System.console() == null) {
-         System.out.println("Konsolenfenster nicht verfügbar.");
+         System.out.println("Konsolenfenster nicht verfÃ¼gbar.");
       } else {
          a = Integer.parseInt(
             System.console().readLine("%s: ","Erste Zahl")
@@ -12,7 +12,7 @@ public class EinAusgabeMitKonsole {
          b = Integer.parseInt(
             System.console().readLine("%s: ","Zweite Zahl")
             ); 
-         System.console().printf("%d + %d = %d",a,b,a+b); 
+         System.console().printf("%d + %d = %d",a,b,a+b);           // WICHTIG!!!
       }
    }
 }

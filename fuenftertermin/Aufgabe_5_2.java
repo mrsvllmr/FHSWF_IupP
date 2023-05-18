@@ -36,6 +36,7 @@ public class Aufgabe_5_2 implements WarteSchlange<String> {
          juengster = aeltester = neu;
       }
    }
+   
    public String remove() {
       String returnWert = null;
       if (aeltester != null) {
@@ -44,20 +45,22 @@ public class Aufgabe_5_2 implements WarteSchlange<String> {
       }
       return returnWert;
    }
+   
    public boolean isEmpty() {
       return aeltester == null;
    }
+   
    public static void main(String[] args) {
       WarteSchlange<String> s = new Aufgabe_5_2();
       String t;
-      for (int i=0;i<2;i++) { // 2 mal ausführen
-         for (int j=0;j<5;j++) { // 5 einfügen
-            s.add("Eintrag "+(10*i+j));
+      for (int i=0;i<2;i++) { // 2 mal ausfÃ¼hren
+         for (int j=0;j<5;j++) { // 5 einfÃ¼gen
+             s.add("Eintrag "+(10*i+j));
          }
          for (int j=0;j<3;j++) { // 3 entnehmen
             System.out.println(s.remove()); 
          } 
-         for (int j=5;j<10;j++) { // 5 einfügen
+         for (int j=5;j<10;j++) { // 5 einfÃ¼gen
             s.add("Eintrag "+(10*i+j));
          }           
          while ((t = s.remove()) != null) { // alle entnehmen

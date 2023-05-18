@@ -3,13 +3,16 @@ package fuenftertermin;
 interface Auto {
    void fahren();
 }
-interface Fahrrad {
+
+interface Fahrrad {                                     // Vorgegriffen: mit "extends Auto" funktioniert es dann
    void fahren();
 }
+
 public class Autorennen02 {
    public static void starteRennen(Auto... autos) {
       for(Auto auto : autos) auto.fahren();
    }
+   
    public static void main(String[] args) {
       Auto lamborghini = 
          new Auto() {
@@ -23,6 +26,8 @@ public class Autorennen02 {
                System.out.println("Strampel strampel");
             }      
            };
-      starteRennen(lamborghini,diamant);
+           
+      starteRennen(lamborghini,diamant);                // Fehler, da ein Fahrrad kein Auto ist (siehe Methodensignatur!)
+                                                        // "Fahrrad kann nicht in ein Auto konvertiert werden")
    }
 }

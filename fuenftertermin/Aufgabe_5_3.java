@@ -13,6 +13,7 @@ public class Aufgabe_5_3 {
          }
       }
    }
+   
    public static void machWas(int n) {
       try {
          switch (n) {

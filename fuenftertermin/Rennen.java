@@ -3,7 +3,7 @@ package fuenftertermin;
 interface Fahrzeug {
    void fahren();
 }
-class Auto implements Fahrzeug {
+class Auto implements Fahrzeug {                        // Auto, ist ein Fahrzeug
    public void fahren() {
       System.out.println("Brumm brumm");
    }
@@ -11,7 +11,8 @@ class Auto implements Fahrzeug {
       System.out.println("Hup hup");
    }   
 }
-class Fahrrad implements Fahrzeug {
+
+class Fahrrad implements Fahrzeug {                     // Fahrrad, ist ein Fahrzeug
    public void fahren() {
       System.out.println("Strampel strampel");
    }
@@ -19,19 +20,21 @@ class Fahrrad implements Fahrzeug {
       System.out.println("Klingel klingel");
    }   
 }
-class Schubkarre implements Fahrzeug {
+
+class Schubkarre implements Fahrzeug {                  // Schubkarre, ist ein Fahrzeug
    public void fahren() {
       System.out.println("Rumpel rumpel");
    }
 }
-public class Rennen {
+
+public class Rennen {                                   // Rennen
    public static void starteRennen(Fahrzeug... fahrzeuge) {
-      for(int i = 0;i < fahrzeuge.length;i++) {
-         fahrzeuge[i].fahren();
-         if (fahrzeuge[i] instanceof Fahrrad)
-            ((Fahrrad) fahrzeuge[i]).klingeln();
-         if (fahrzeuge[i] instanceof Auto)
-            ((Auto) fahrzeuge[i]).hupen();  
+      for(int i = 0;i < fahrzeuge.length;i++) {         // Wird für jedes übergebene Objekt ausgeführt
+         fahrzeuge[i].fahren();                         // fahren() kann einfach so aufgerufen werden, da jede Klasse diese Methode hat
+         if (fahrzeuge[i] instanceof Fahrrad)           // hier Prüfung, da die Methoden unterschiedlich heißen
+            ((Fahrrad) fahrzeuge[i]).klingeln();        // BEACHTE ZUDEM: Cast auf ursprüngliche Klasse, da dort Implementation
+         if (fahrzeuge[i] instanceof Auto)              // s.o.
+            ((Auto) fahrzeuge[i]).hupen();              // s.o.
       }       
    }
    public static void main(String[] args) {

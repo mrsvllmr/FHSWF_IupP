@@ -4,12 +4,17 @@ class RekursiveMethoden03 {
    static long ggT_Iteration(long a, long b){
       long r;
       while (b != 0) {
-         r = a % b;
-         a = b;
-         b = r;
+         r = a % b;             // Divisionsrest
+         a = b;                 // a wird auf b gesetzt
+         b = r;                 // b wird auf Divisionsrest gesetzt
+                                // Nachvollziehen des Algo: 24, 9
+                                // r = 24 % 9 = 6, a = 9, b = 6
+                                // r = 9 % 6 = 3, a = 6, b = 3
+                                // r = 6 % 3 = 0, a = 3, b = 0
       }
       return a;
    }
+   
    static long ggT_Rekursion(long a, long b){
       long r = a % b;
       if (r == 0)
@@ -17,23 +22,24 @@ class RekursiveMethoden03 {
       else
          return ggT_Rekursion(b, r);
    }
+   
    public static void main(String[] args) {
       final int ITERATIONEN = 1_000;
-      long[] a = new long[ITERATIONEN];
-      long[] b = new long[ITERATIONEN];  
+      long[] a = new long[ITERATIONEN];                     // Array mit 1000 Positionen
+      long[] b = new long[ITERATIONEN];                     // s.o.
       for (int i=0; i < ITERATIONEN; i++){
-         a[i] = Math.round(Math.random()*1_000_000);
-         b[i] = Math.round(Math.random()*1_000_000);       
+         a[i] = Math.round(Math.random()*1_000_000);        // Feld wird mit Zahlen zwischen 0 und 1.000.000 gefüllt
+         b[i] = Math.round(Math.random()*1_000_000);        // s.o.
       }         
       long start;
-      start = System.nanoTime();
+      start = System.nanoTime();                            // Startzeit
       for (int i=0; i < ITERATIONEN; i++)
-         ggT_Iteration(a[i],b[i]);
+         ggT_Iteration(a[i],b[i]);                          // Aufruf ggT_Iteration für beide Arrays
       System.out.println("Iteration in Nanosekunden: " 
          + (System.nanoTime() - start)/ITERATIONEN);  
       start = System.nanoTime();
       for (int i=0; i < ITERATIONEN; i++)
-         ggT_Rekursion(a[i],b[i]);
+         ggT_Rekursion(a[i],b[i]);                          // Aufruf ggT_Rekursion für beide Arrays
       System.out.println("Rekursion in Nanosekunden: " 
          + (System.nanoTime() - start)/ITERATIONEN);         
    }
