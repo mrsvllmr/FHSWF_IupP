@@ -17,6 +17,7 @@ public class aufgabe2
          * - unterbricht die aktuelle Schleifenausführung direkt (möglicherweise vorhandene weitere Anweisungen in dem Block werden übersprungen) und setzt sie mit der nächsten Iteration fort (sofern es eine nächste gibt)
          * Abgrenzung
          * - während break die Schleife in Gänze beendet, beendet continue nur die aktuelle Iteration und setzt mit der nächsten fort
+         * - break geht bei switch und Iterationen, continue nicht!
          */
     }
 }

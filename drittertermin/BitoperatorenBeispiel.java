@@ -18,6 +18,13 @@ class BitoperatorenBeispiel {
       System.out.println(c<<0);
       System.out.println(c<<d);
       System.out.println(c<<d);         // Erkenntnis: c wird bei dem ersten Bitshift nicht verändert, d.h. diese Verschiebung hat den gleichen Ausgangswert
+      
+      System.out.println("\nMV Tests"); // Fazit: Durch die folgenden Verschiebungen wird a also nicht nachhaltig, sondern nur für/während der Ausgabe verändert
+      int testVorher = 1;
+      System.out.println(testVorher); 
+      System.out.println(testVorher>>2); 
+      System.out.println(testVorher); 
+      System.out.println(testVorher<<2); 
    } 
 }
 // 00000000 00000000 00000000 00011010 -> +26

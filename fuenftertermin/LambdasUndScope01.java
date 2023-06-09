@@ -10,7 +10,7 @@ public class LambdasUndScope01 {
       int j = 20;
       Executable p = 
          () -> {
-            int i = 20; //Kompilierfehler                       // weil schon deklariert!
+            int e = 20; //Kompilierfehler                       // weil schon deklariert!
             while(j > 0) j--; //Kompilierfehler                 // weil nicht final! (lokale Variablen müssen final sein!)
          };
       p.exec();

@@ -67,8 +67,9 @@ class Artikel implements LagerWare {
 public class Lager02 {
    static float berechneLagerWert(LagerWare... a) {
       float sum = 0.0f;
-      for (int i=0;i<a.length;i++)
-         sum+=a[i].berechneWarenwert();
+      //for (int i=0;i<a.length;i++)
+      //   sum+=a[i].berechneWarenwert();
+      for (LagerWare x: a) sum += x.berechneWarenwert();
       return sum;
    }
    

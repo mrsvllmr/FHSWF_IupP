@@ -30,7 +30,10 @@ public class aufgabe10
                         System.out.print("i = " + i + " j = " + j + " ");
                     }
             }
-        // i = 1 j = 0 i = 2 j = 0 i = 2 j = 1
+        /* i = 1 j = 0 
+         * i = 2 j = 0 
+         * i = 2 j = 1 
+        */
         // WICHTIG/BEACHTE: KEINE ZEILENUMBRUECHE!!!
     }
 }

@@ -2,6 +2,7 @@ package fuenftertermin;
 
 interface Auto {
    void fahren();
+   void hupen();
 }
 
 public class Autorennen01 {
@@ -15,12 +16,18 @@ public class Autorennen01 {
             public void fahren() {
                System.out.println("Brumm brumm");
             }
+            public void hupen() {
+                System.out.println("Möööööööööööööööp");
+            }
          };
       Auto trabant =                                    // Anonyme Klasse
          new Auto() {
             public void fahren() {
                System.out.println("Tucker tucker");
-            }      
+            }   
+            public void hupen() {
+                System.out.println("Möööööööööööööööp");
+            }
            };
       starteRennen(lamborghini,trabant);
    }

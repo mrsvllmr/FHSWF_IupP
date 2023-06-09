@@ -14,4 +14,5 @@ class BreakLabeled {
    
    }
 } 
-// Annahme: "Schleife j" und "Schluss" werden je 1x erreicht
+// Annahme: "Schleife j" und "Schluss" werden je 1x erreicht 
+// --> korrekt

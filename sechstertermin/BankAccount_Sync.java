@@ -3,15 +3,19 @@ package sechstertermin;
 import java.util.concurrent.*;
 public class BankAccount_Sync {
    private volatile double balance;
+   
    public synchronized void credit(double amount){
       balance = balance + amount; 
    }
+   
    public synchronized void debit(double amount){ 
       balance = balance - amount; 
    }
+   
    public double getBalance(){
       return balance;
    }
+   
    public static void main(String[] args) throws InterruptedException {
       final BankAccount_Sync bankAccount = new BankAccount_Sync();
       ExecutorService executorService = Executors.newFixedThreadPool(10);
@@ -25,4 +29,5 @@ public class BankAccount_Sync {
       }
       System.out.println("Final Balance: " + bankAccount.getBalance()); 
    }
+   
 }

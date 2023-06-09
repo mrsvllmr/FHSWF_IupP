@@ -14,7 +14,7 @@ class SelektionBeispiel {
                break;
             case 1:
                System.out.println("Der Divisionsrest betraegt 1.");             // s.o., weil 1
-               break;
+               //break;                                                         // Erkenntnis: Weil kein Break sowohl Print von case 1 als auch von case 2 (dort wird dann durch break letztlich gestoppt)
             case 2:
                System.out.println("Der Divisionsrest betraegt 2.");
                break;

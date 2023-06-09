@@ -18,9 +18,23 @@ public class Autorennen04 {
    }
    
    public static void main(String[] args) {
+      // Anonyme Klasse
+      Auto meinAuto = new Auto() {
+          public void fahren() {
+              System.out.println("Ich bin die Anonyme-Klasse-Alternative!");
+          }
+      };
+      starteRennen(meinAuto);
+       
+      // Lambda-Asudruck
+      starteRennen(() -> brummen(), () -> tuckern());
+      
+      // Methodenreferenz
       starteRennen(Autorennen04::brummen,Autorennen04::tuckern);        // THEMA METHODENREFERENZ (siehe Seite 138f. unten)
                                                                         // dadurch Nutzung der vorhandenen Methoden, da sie gleiche Parameterliste/Rückgabetyp haben!
-      // Alternative mit Lambda-Asudrücken wäre: starteRennen(() -> brummen(), () -> tuckern());
+      
+      
+      
    }
 }
 /*

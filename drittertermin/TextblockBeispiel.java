@@ -3,10 +3,10 @@ package drittertermin;
 class TextblockBeispiel { 
    public static void main(String[] args) { 
       String s = "A\n  B\nC\n"; 
-      String t = """ 
+      String t = """
       A
         B
-      C 
+      C
       """; 
       System.out.println(s == t);
    } 

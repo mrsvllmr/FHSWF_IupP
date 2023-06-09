@@ -8,7 +8,7 @@ public class Throwable03 implements Einfach {
    public void macheEtwas() throws java.io.IOException {
    }
    
-   public static void main(String[] args) {
+   public static void main(String[] args) throws java.io.IOException {
       new Throwable03().macheEtwas();                       // Aufrufer MUSS behandeln, wenn Methode Ausnahme in exceptionList ausweist (siehe folgend)
       /*try {
          new Throwable03().macheEtwas();  

@@ -14,3 +14,12 @@ class Uebung_3_5 {
    }
 }
 
+/*
+ * String
+ * 0
+ * Inkrement
+ * String
+ * 1
+ * Inkrement
+ */
+

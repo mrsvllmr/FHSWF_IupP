@@ -10,5 +10,6 @@ class Scope {
       }
       System.out.println("Wert 2 = " + w2);         // Annahme: "Wert 2 = "
                                                     // FALSCH: w2 kann gar nicht gefunden werden -> Laufzeitfehler!
+                                                    // -> Scope von w2 beschränkt sich auf den inneren Block!
    }
 }
